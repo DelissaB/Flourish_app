@@ -1,2 +1,6 @@
 class Api::LocationsController < ApplicationController
-end
+  def index
+    @locations = Location.all 
+    render "index.json.jb"
+  end
+end 
