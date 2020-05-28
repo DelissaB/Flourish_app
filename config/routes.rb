@@ -9,5 +9,11 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/locations" => "locations#index"
+
+    get "/plants" => "plants#index"
+
+    post "/users" => "users#create"
+
+    post "/sessions" => "sessions#create"
   end
 end
