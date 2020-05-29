@@ -4,6 +4,8 @@ class Api::LocationsController < ApplicationController
     render "index.json.jb"
   end
 
-  # def show
-  #   render "show.json.jb"
+  def show
+    @location = Location.find_by(id: params[:id])
+    render "show.json.jb"
+  end
 end

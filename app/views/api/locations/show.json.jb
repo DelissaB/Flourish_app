@@ -1,4 +1,5 @@
 {
+  id: @location.id,
   address: @location.address,
   zipcode: @location.zipcode,
   neighborhoods: @location.neighborhoods,

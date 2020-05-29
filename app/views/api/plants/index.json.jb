@@ -1,5 +1,6 @@
 @plants.map do |plant|
   {
+    id: plant.id,
     name: plant.name,
   }
 end

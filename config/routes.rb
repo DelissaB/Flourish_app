@@ -9,6 +9,7 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/locations" => "locations#index"
+    get "/locations/:id" => "locations#show"
 
     get "/plants" => "plants#index"
 
